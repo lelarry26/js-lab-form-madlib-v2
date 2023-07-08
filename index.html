@@ -11,6 +11,50 @@
 
 <body>
 
+
+  <div>
+    <form id="madlib">
+      <!-- used to add event listeners when form is submitted. The inputs below turn into values from the form and are stored. e.prevent default keeps the page from refreshing after submit. -->
+        <fieldset>
+            <label> Name:
+              <input required name="name" type="text">
+                <!--input required name gives the user input an "id" with the type of text-->
+            </label>
+            <br/>
+            <label> Place:
+                <input required name="place" type="text">
+            </label>
+            <br/>
+            <label> verb:
+                <input required name="verb" type="text">
+            </label>
+            <br/>
+            <label> Place2:
+                <input required name="Place2" type="text">
+            </label>
+            <br/>
+            <label> Adjective:
+                <input required name="adjective" type="text">
+            </label>
+            <br/>
+            <label> creature:
+                <input required name="creature" type="text">
+            </label>
+            <br/>
+            <label> adjective2:
+                <input required name="adjective2" type="text">
+            </label>
+        </fieldset>
+
+        <button type="submit">submit</button>
+    </form>
+</div>
+
+<div id="solution">
+  <!-- Used to generate the madlib sentence at the end of the script using template literals -->
+
+</div>
 </body>
 <script src="js/index.js"></script>
+
 </html>
